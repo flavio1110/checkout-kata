@@ -1,0 +1,49 @@
+# Checkout Kata problem and Classical x Mockist approaches
+
+## Problem
+An e-commerce store has a list of products in his database, each product might have a special promotion. Today there are two active promotions:
+
+- Get 2 and Pay 1: the customer get the second product free;
+- Get 3 items for 10$: Regardless of the unit price, if the customer get 3 items, he or she will pay only 10$.
+
+In the checkout, the customer should inform the quantity of each selected product and then it should see the total per product and the order total.
+
+E.g.
+
+|Product|Qty|Unit Price|Promotion|Price|
+|-------|---|----------|---------|-----|
+|T-shirt|2| $4|Get2Pay1|$4|
+|Hat|4|$4|3ItemsPay10|$10|
+|Glass|3|$3.4|3ItemsPay10|$10|
+|Glober|3|$2|NULL|$6|
+
+Total:$30
+
+## Status
+
+I've just finished the first iteration of what I believe it's more classical-ish I can get now. I hope improve the code in next iterations in order to get a clear separation of what is deterministic and what is not.
+
+The next step is complete a iteration in the mockist style and compare the differences.
+
+## Motivation
+
+After watch the presentation of Mark Seeman about [Functional Architecture](https://vimeo.com/180287057), I was really impacted with the correlation between pure and impure functions and their impact in the system design and of course in its quality. I highly recommend you to invest one hour of your time to watch it.
+
+One of the most important points (IMO) mentioned by Seeman is related to the way we are building and testing our "decoupled OO systems"  might cause Test-Induced damage (43m51s).
+
+Then after reading some posts about testability and TDD, I decided use this simple problem in order to try simulate the Classical and Mockist approach for development driven by tests. The goal is try to figure out which one is more suitable for this kind of problem and how a mindset could impact in the system design.
+
+## Source
+- [Functional Architecture - Mark Seeman](https://vimeo.com/180287057)
+
+- [Classical vs Mockist testing - Jonathan Rasmusson](https://agilewarrior.wordpress.com/2015/04/18/classical-vs-mockist-testing/)
+
+- [Mocks Aren't Stubs - Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html)
+
+- [Mockists Are Dead. Long Live Classicists -  Fabio Pereira](https://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists)
+
+## Status
+
+I've just finished the first iteration of what I believe it's more classical-ish I can get now. I hope improve the code in next iterations in order to get a clear separation of what is deterministic and what is not.
+
+The next step is complete a iteration in the mockist style and compare the differences.
