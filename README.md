@@ -15,7 +15,7 @@ E.g.
 |T-shirt|2| $4|Get2Pay1|$4|
 |Hat|4|$4|3ItemsPay10|$10|
 |Glass|3|$3.4|3ItemsPay10|$10|
-|Glober|3|$2|NULL|$6|
+|Glober|3|$2||$6|
 
 Total:$30
 
@@ -27,7 +27,7 @@ The next step is complete a iteration in the mockist style and compare the diffe
 
 ## Motivation
 
-After watch the presentation of Mark Seeman about [Functional Architecture](https://vimeo.com/180287057), I was really impacted with the correlation between pure and impure functions and their impact in the system design and of course in its quality. I highly recommend you to invest one hour of your time to watch it.
+After I watch the presentation of Mark Seeman about [Functional Architecture](https://vimeo.com/180287057), I was shocked with the correlation between pure and impure functions and their impact in the system design and of course in its quality. I highly recommend you to invest one hour of your time to watch it.
 
 One of the most important points (IMO) mentioned by Seeman is related to the way we are building and testing our "decoupled OO systems"  might cause Test-Induced damage (43m51s).
 
@@ -41,9 +41,3 @@ Then after reading some posts about testability and TDD, I decided use this simp
 - [Mocks Aren't Stubs - Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html)
 
 - [Mockists Are Dead. Long Live Classicists -  Fabio Pereira](https://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists)
-
-## Status
-
-I've just finished the first iteration of what I believe it's more classical-ish I can get now. I hope improve the code in next iterations in order to get a clear separation of what is deterministic and what is not.
-
-The next step is complete a iteration in the mockist style and compare the differences.
