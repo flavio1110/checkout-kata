@@ -2,7 +2,7 @@ using System;
 
 namespace CheckoutKata.Classic
 {
-    public class SecondFree : IPromotion
+    public class GetSecondFree : IPromotion
     {
         public string Name => "Get 2 pay 1";
 

@@ -59,7 +59,7 @@ namespace CheckoutKata.Classic.Tests
         {
             var products = new List<Product>
             {
-                new Product { Id = 1,  Name = "t-shirt", Promotion = new SecondFree(), Price = 2f },
+                new Product { Id = 1,  Name = "t-shirt", Promotion = new GetSecondFree(), Price = 2f },
                 new Product { Id = 2, Name = "hat", Promotion = new GetThreePayTen(), Price = 5f },
             };
             
@@ -77,7 +77,7 @@ namespace CheckoutKata.Classic.Tests
 
             actual.Items[0].Product.Id.ShouldBe(1);
             actual.Items[0].Product.Name.ShouldBe("t-shirt");
-            actual.Items[0].Product.Promotion.ShouldBeOfType<SecondFree>();
+            actual.Items[0].Product.Promotion.ShouldBeOfType<GetSecondFree>();
             actual.Items[0].Product.Price.ShouldBe(2f);
             actual.Items[0].Price.ShouldBe(2f);
 

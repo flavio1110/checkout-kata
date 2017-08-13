@@ -10,7 +10,7 @@ namespace CheckoutKata.Classic.Tests
 
         public CalculatePriceTests()
         {
-            sut = new SecondFree();
+            sut = new GetSecondFree();
         }
 
         [Fact]
