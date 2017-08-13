@@ -88,6 +88,29 @@ namespace CheckoutKata.Classic.Tests
         }
 
         [Fact]
+        public void Ctor_MoreProductInListThanSelected_OnlySelectedProductsAsItems()
+        {
+            var selection = new List<SelectedProduct>
+            {
+                new SelectedProduct { Id = 1 },
+                new SelectedProduct { Id = 2 }
+            };
+
+            var products = new List<Product>()
+            {
+                new Product { Id = 1 },
+                new Product { Id = 2 },
+                new Product { Id = 3 }
+            };
+
+            sut = new Checkout(selection, products);
+
+            sut.Items.ShouldNotBeEmpty();
+            
+            sut.Items.All(item => selection.Select(s => s.Id).Contains(item.Product.Id));
+        }
+
+        [Fact]
         public void Ctor_WhenProductHasPriceAndNoPromotion_TheItemPriceShouldBeQuantityTimesPrice()
         {
             var selection = new List<SelectedProduct>
@@ -133,26 +156,27 @@ namespace CheckoutKata.Classic.Tests
             
         }
 
-        // [Fact]
-        // public void Ctor_WhenItemsHasPrice_TotalShouldBeTheSumOfAllItems()
-        // {
-        //     var selection = new List<SelectedProduct>
-        //     {
-        //         new SelectedProduct { Id = 1, Quantity = 2 },
-        //         new SelectedProduct { Id = 2,  Quantity = 3 },
-        //     };
+        [Fact]
+        public void Ctor_WhenItemsHasPrice_TotalShouldBeTheSumOfAllItems()
+        {
+            var selection = new List<SelectedProduct>
+            {
+                new SelectedProduct { Id = 1, Quantity = 2 },
+                new SelectedProduct { Id = 2,  Quantity = 3 },
+            };
 
-        //     var products = new List<Product>()
-        //     {
-        //         new Product { Id = 1, Price = 2 },
-        //         new Product { Id = 2, Price = 3 }
-        //     };
+            var products = new List<Product>()
+            {
+                new Product { Id = 1, Price = 2 },
+                new Product { Id = 2, Price = 3 }
+            };
 
-        //     sut = new Checkout(selection, products);
+            sut = new Checkout(selection, products);
 
-        //     sut.Items.ShouldNotBeEmpty();
-            
-        //     sut.Items.All(item => products.Select(p => p.Id).Contains(item.Product.Id));
-        // }
+            sut.Items.ShouldNotBeEmpty();
+            sut.Items[0].Price.ShouldBe(4f);
+            sut.Items[1].Price.ShouldBe(9f);
+            sut.Total.ShouldBe(13f);
+        }
     }
 }
