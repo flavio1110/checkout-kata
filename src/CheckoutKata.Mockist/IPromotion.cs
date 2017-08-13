@@ -2,6 +2,8 @@ namespace CheckoutKata.Mockist
 {
     public interface IPromotion
     {
-        string Name { get; set; }
+        string Name { get; }
+
+        float CalculatePrice(float unitPrice, int quantity);
     }
 }
