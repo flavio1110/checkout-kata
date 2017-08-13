@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/qlp7fuamo009nwsj?svg=true)](https://ci.appveyor.com/project/flavio1110/checkout-kata)
+
+
 # Checkout Kata problem and Classical x Mockist approaches
 
 ## Problem

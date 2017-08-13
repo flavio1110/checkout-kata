@@ -4,9 +4,9 @@ image: Visual Studio 2017 Preview
 
 before_build:
 - dotnet --info
-- appveyor-retry dotnet restore -v Minimal
+- dotnet restore -v Minimal --no-cache
 build_script:
-- dotnet build
+- dotnet build --configuration Release --version-suffix %APPVEYOR_BUILD_NUMBER%
 test_script:
-- dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj
-- dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj
+- dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
+- dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
