@@ -21,7 +21,7 @@ Total:$30
 
 ## Status
 
-I've just finished the first iteration of what I believe it's more classical-ish I can get now. I hope improve the code in next iterations in order to get a clear separation of what is deterministic and what is not.
+I've just finished the third iteration  of refactoring and now I moved more logic from my impure CheckoutService method to a deterministic place in Checkout class. On top of this clear separation I have more behavior in my class and the Checkout class is owns the creation of CheckoutItems. Looks better now. :)
 
 The next step is complete a iteration in the mockist style and compare the differences.
 
