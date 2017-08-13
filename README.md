@@ -21,9 +21,11 @@ Total:$30
 
 ## Status
 
-I've just finished the third iteration  of refactoring and now I moved more logic from my impure CheckoutService method to a deterministic place in Checkout class. On top of this clear separation I have more behavior in my class and the Checkout class is owns the creation of CheckoutItems. Looks better now. :)
+### Classic
+I have completed the third iteration  of refactoring and now I moved more logic from my impure CheckoutService method to a deterministic place in Checkout class. On top of this clear separation I have more behavior in my class and the Checkout class is owns the creation of CheckoutItems. Looks better now. :)
 
-The next step is complete a iteration in the mockist style and compare the differences.
+### Mockist
+I finished the first iteration of implementation using the mockist approach. The fact is my classes are more decoupled from its depedencies, however as pointed by others authors, it leads your tests to be more coupled in the implementation. Hence the refactoring becomes more complicated since I'll probably need to change my tests after the refactor my core code. I'll see it in practice in the next iterations using this approach.
 
 ## Motivation
 
