@@ -1,10 +1,10 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/qlp7fuamo009nwsj?svg=true)](https://ci.appveyor.com/project/flavio1110/checkout-kata)
+[![Build status](https://ci.appveyor.com/api/projects/status/qlp7fuamo009nwsj?svg=true)](https://ci.appveyor.com/project/flavio1110/checkout-kata) [![Build Status](https://travis-ci.org/flavio1110/checkout-kata.svg?branch=master)](https://travis-ci.org/flavio1110/checkout-kata)
 
 
 # Checkout Kata problem and Classical x Mockist approaches
 
 ## Problem
-An e-commerce store has a list of products in his database, each product might have a special promotion. Today there are two active promotions:
+An e-commerce store has a list of products in its database, each product might have a special promotion. Today there are two active promotions:
 
 - Get 2 and Pay 1: the customer get the second product free;
 - Get 3 items for 10$: Regardless of the unit price, if the customer get 3 items, he or she will pay only 10$.
