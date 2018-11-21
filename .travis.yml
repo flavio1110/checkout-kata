@@ -8,7 +8,7 @@ addons:
       secure: $SONNARCLOUDID
 
 before_install:
- - dotnet tool install --tool-path . --tool-path . dotnet-sonarscanner --version 4.4.2
+ - dotnet tool install --tool-path . dotnet-sonarscanner --version 4.4.2
 
 script:
  - dotnet sonarscanner begin /key:flavio1110_checkout-kata /name:project_name
