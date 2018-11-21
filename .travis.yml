@@ -3,11 +3,14 @@ mono: none
 dotnet: 2.1.500
 addons:
   sonarcloud:
-    organization: "flavio1110-github" # the key of the org you chose at step #3
+    organization: "flavio1110-github"
     token:
       secure: $SONNARCLOUDID
-script:
+
+before_install:
  - dotnet tool install --global dotnet-sonarscanner --version 4.4.2
+
+script:
  - dotnet sonarscanner begin /key:flavio1110_checkout-kata /name:project_name
  - dotnet restore -v Minimal --no-cache
  - dotnet build --configuration Release
