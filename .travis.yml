@@ -1,0 +1,12 @@
+language: csharp
+mono: none
+dotnet: 2.1.5
+script:
+# - dotnet tool install --global sonnarscanner
+ #- dotnet sonarscanner begin /key:flavio1110_checkout-kata /name:project_name  /d:sonar.organization="flavio1110-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=""
+ - dotnet --info
+ - dotnet restore -v Minimal --no-cache
+ - dotnet build --configuration Release
+ - dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
+ - dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
+# - dotnet sonarscanner end /d:sonar.login=""
