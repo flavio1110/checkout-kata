@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8D3C4F26-433B-456F-A73B-6E27C95041EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic", "src\CheckoutKata.Classic\CheckoutKata.Classic.csproj", "{D79C28CA-31F2-4263-BC75-AE737E8529FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic", "src/CheckoutKata.Classic/CheckoutKata.Classic.csproj", "{D79C28CA-31F2-4263-BC75-AE737E8529FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Mockist", "src\CheckoutKata.Mockist\CheckoutKata.Mockist.csproj", "{9A3C5BFD-4871-416A-A416-85628C74B297}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Mockist", "src/CheckoutKata.Mockist/CheckoutKata.Mockist.csproj", "{9A3C5BFD-4871-416A-A416-85628C74B297}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AECC9B11-8BB8-47CA-B885-F2CCD0246DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Mockist.Tests", "test\CheckoutKata.Mockist.Tests\CheckoutKata.Mockist.Tests.csproj", "{0F31703C-00AD-47D1-B111-9D9868E7016A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Mockist.Tests", "test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj", "{0F31703C-00AD-47D1-B111-9D9868E7016A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic.Tests", "test\CheckoutKata.classic.Tests\CheckoutKata.Classic.Tests.csproj", "{901B0913-BEAF-4EE2-B5B0-95F6CD84F0C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic.Tests", "test/CheckoutKata.classic.Tests/CheckoutKata.Classic.Tests.csproj", "{901B0913-BEAF-4EE2-B5B0-95F6CD84F0C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
