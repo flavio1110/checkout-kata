@@ -7,7 +7,7 @@ addons:
     token:
       secure: $SONNARCLOUDID
 script:
- - dotnet tool install --global sonnarscanner
+ - dotnet tool install --global dotnet-sonarscanner --version 4.4.2
  - dotnet sonarscanner begin /key:flavio1110_checkout-kata /name:project_name
  - dotnet restore -v Minimal --no-cache
  - dotnet build --configuration Release
