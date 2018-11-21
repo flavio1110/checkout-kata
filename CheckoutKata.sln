@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AECC9B11-8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Mockist.Tests", "test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj", "{0F31703C-00AD-47D1-B111-9D9868E7016A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic.Tests", "test/CheckoutKata.classic.Tests/CheckoutKata.Classic.Tests.csproj", "{901B0913-BEAF-4EE2-B5B0-95F6CD84F0C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKata.Classic.Tests", "test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj", "{901B0913-BEAF-4EE2-B5B0-95F6CD84F0C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
