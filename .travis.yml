@@ -1,6 +1,6 @@
 language: csharp
 mono: none
-dotnet: 2.1.5
+dotnet: 2.1.500
 script:
 # - dotnet tool install --global sonnarscanner
  #- dotnet sonarscanner begin /key:flavio1110_checkout-kata /name:project_name  /d:sonar.organization="flavio1110-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=""
