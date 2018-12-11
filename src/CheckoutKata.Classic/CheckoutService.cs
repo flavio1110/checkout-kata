@@ -6,7 +6,7 @@ namespace CheckoutKata.Classic
 {
     public class CheckoutService
     {
-        private readonly IProductRepository productRepository;
+        IProductRepository productRepository;
         public CheckoutService(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
