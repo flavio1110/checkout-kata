@@ -8,10 +8,11 @@ addons:
       secure: $SONNARCLOUDID
 
 script:
+ - mkdir $TRAVIS_BUILD_DIR/coverage
  - dotnet tool install --tool-path . dotnet-sonarscanner --version 4.4.2
- - ./dotnet-sonarscanner begin /key:flavio1110_checkout-kata
+ - ./dotnet-sonarscanner begin /key:flavio1110_checkout-kata /d:sonar.cs.opencover.reportsPaths="$TRAVIS_BUILD_DIR/coverage/opencover-results.xml"
  - dotnet restore -v Minimal --no-cache
  - dotnet build --configuration Release
- - dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
- - dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
+ - dotnet test --logger trx /p:CollectCoverage=true /p:CoverletOutput=$TRAVIS_BUILD_DIR/coverage/results.json test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
+ - dotnet test --logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:MergeWith=$TRAVIS_BUILD_DIR/coverage/results.json /p:CoverletOutput=$TRAVIS_BUILD_DIR/coverage/opencover-results.xml test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
  - ./dotnet-sonarscanner end
