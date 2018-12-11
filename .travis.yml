@@ -9,9 +9,9 @@ addons:
 
 script:
  - dotnet tool install --tool-path . dotnet-sonarscanner --version 4.4.2
- - dotnet-sonarscanner begin /key:flavio1110_checkout-kata /name:project_name
+ - ./dotnet-sonarscanner begin /key:flavio1110_checkout-kata
  - dotnet restore -v Minimal --no-cache
  - dotnet build --configuration Release
  - dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
  - dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
- - dotnet-sonarscanner end
+ - ./dotnet-sonarscanner end
