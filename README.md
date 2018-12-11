@@ -1,4 +1,5 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/qlp7fuamo009nwsj?svg=true)](https://ci.appveyor.com/project/flavio1110/checkout-kata) [![Build Status](https://travis-ci.org/flavio1110/checkout-kata.svg?branch=master)](https://travis-ci.org/flavio1110/checkout-kata)
+[![Build status](https://ci.appveyor.com/api/projects/status/qlp7fuamo009nwsj?svg=true)](https://ci.appveyor.com/project/flavio1110/checkout-kata) [![Build Status](https://travis-ci.org/flavio1110/checkout-kata.svg?branch=master)](https://travis-ci.org/flavio1110/checkout-kata) ![Quality check](https://sonarcloud.io/api/project_badges/measure?project=flavio1110_checkout-kata&metric=alert_status)
+
 
 
 # Checkout Kata problem and Classical x Mockist approaches

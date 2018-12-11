@@ -6,7 +6,7 @@ namespace CheckoutKata.Mockist
 {
     public class CheckoutCalculator : ICheckoutCalculator
     {
-        IPriceCalculator priceCalculator;
+        private readonly IPriceCalculator priceCalculator;
 
         public CheckoutCalculator(IPriceCalculator priceCalculator)
         {

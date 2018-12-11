@@ -6,8 +6,8 @@ namespace CheckoutKata.Mockist
 {
     public class CheckoutService
     {
-        IProductRepository productRepository;
-        ICheckoutCalculator checkoutCalculator;
+        private readonly IProductRepository productRepository;
+        private readonly ICheckoutCalculator checkoutCalculator;
         public CheckoutService(IProductRepository productRepository, ICheckoutCalculator checkoutCalculator)
         {
             this.productRepository = productRepository;
