@@ -8,5 +8,4 @@ before_build:
 build_script:
 - dotnet build --configuration Release --version-suffix %APPVEYOR_BUILD_NUMBER%
 test_script:
-- dotnet test test/CheckoutKata.Mockist.Tests/CheckoutKata.Mockist.Tests.csproj --configuration Release --no-build
-- dotnet test test/CheckoutKata.Classic.Tests/CheckoutKata.Classic.Tests.csproj --configuration Release --no-build
+- dotnet test
